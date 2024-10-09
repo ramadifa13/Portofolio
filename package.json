@@ -1,0 +1,42 @@
+{
+  "name": "kerri-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bento-grid": "^0.1.1",
+    "bootstrap": "^5.3.1",
+    "framer-motion": "^11.0.3",
+    "jarallax": "^2.2.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-text-rotator": "^1.2.0",
+    "react-text-transition": "^3.1.0",
+    "react-tsparticles": "^2.12.2",
+    "react-type-animation": "^3.2.0",
+    "react-wavify": "^1.10.0",
+    "tsparticles": "^3.2.1",
+    "tsparticles-slim": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "sass": "^1.70.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}
