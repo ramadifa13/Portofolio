@@ -897,3 +897,32 @@ ul.pattern .color6 {
   transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
   border-radius: 0;
 }/*# sourceMappingURL=style.css.map */
+
+.pagination .page-link {
+  color: white;
+  background-color: #374459;
+  border: none;
+}
+
+.pagination .page-link:hover {
+  background-color: #1e2d44;
+}
+
+.pagination .active .page-link {
+  background-color: #061630;
+  color: white;
+}
+
+.pagination .page-link.rounded-pill {
+  padding: 0.5rem 1rem;
+}
+
+.pagination .disabled .page-link {
+  color: #ccc; 
+  background-color: #2a3342;
+  pointer-events: none; 
+  opacity: 0.4;
+}
+
+
+

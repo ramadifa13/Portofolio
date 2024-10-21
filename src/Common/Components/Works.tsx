@@ -8,11 +8,13 @@ const Works = () => {
   const [filter, setFilter] = useState("all");
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [showAll, setShowAll] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const itemsPerPage = 6;
 
   const handleFilter = (value: React.SetStateAction<string>) => {
     setFilter(value);
-    setShowAll(false);
+    setCurrentPage(1); // Reset to the first page when changing filter
   };
 
   const handleProjectClick = (project: any) => {
@@ -29,7 +31,17 @@ const Works = () => {
     (item) => filter === "all" || item.category.includes(filter)
   );
 
-  const displayedData = showAll ? filteredData : filteredData.slice(0, 6);
+  // Calculate the indices for slicing the data for the current page
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentData = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Calculate total pages
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+  };
 
   return (
     <>
@@ -85,7 +97,7 @@ const Works = () => {
         </div>
         <div className="container">
           <div className="row mt-4 work-filter">
-            {displayedData.map((item, index) => (
+            {currentData.map((item, index) => (
               <div key={index} className="col-lg-4 work_item">
                 <div
                   className="img-zoom"
@@ -109,14 +121,43 @@ const Works = () => {
             ))}
           </div>
 
-          {!showAll && filteredData.length > 6 && (
+          {totalPages > 1 && (
             <div className="text-center mt-4">
-              <button
-                className="btn btn-secondary "
-                onClick={() => setShowAll(true)}
-              >
-                 See All
-              </button>
+              <nav>
+                <ul className="pagination justify-content-center">
+                  <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
+                    <button
+                      className="page-link rounded-pill"
+                      onClick={() => handlePageChange(currentPage - 1)}
+                      disabled={currentPage === 1}
+                    >
+                      &laquo; Previous
+                    </button>
+                  </li>
+                  {[...Array(totalPages)].map((_, index) => (
+                    <li
+                      key={index}
+                      className={`page-item ${currentPage === index + 1 ? "active" : ""}`}
+                    >
+                      <button
+                        className="page-link rounded-pill mx-1"
+                        onClick={() => handlePageChange(index + 1)}
+                      >
+                        {index + 1}
+                      </button>
+                    </li>
+                  ))}
+                  <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
+                    <button
+                      className="page-link rounded-pill"
+                      onClick={() => handlePageChange(currentPage + 1)}
+                      disabled={currentPage === totalPages}
+                    >
+                      Next &raquo;
+                    </button>
+                  </li>
+                </ul>
+              </nav>
             </div>
           )}
         </div>
