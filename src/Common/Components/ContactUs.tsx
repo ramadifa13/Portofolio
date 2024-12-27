@@ -12,7 +12,6 @@ const ContactUs = () => {
       subject
     )}&body=${encodeURIComponent(`${message}`)}`;
 
-    // Redirect to mailto link
     window.location.href = mailtoLink;
   };
 
@@ -44,7 +43,7 @@ const ContactUs = () => {
                   <h5 className="mb-0 contact_detail-title fw-bold">
                     Whatsapp me
                   </h5>
-                  <p className="text-muted">+6285186671308</p>
+                  <p className="text-muted">+6285183213883</p>
                 </div>
               </div>
             </Col>

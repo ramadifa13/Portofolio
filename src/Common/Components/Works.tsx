@@ -14,7 +14,7 @@ const Works = () => {
 
   const handleFilter = (value: React.SetStateAction<string>) => {
     setFilter(value);
-    setCurrentPage(1); // Reset to the first page when changing filter
+    setCurrentPage(1); 
   };
 
   const handleProjectClick = (project: any) => {
@@ -31,12 +31,10 @@ const Works = () => {
     (item) => filter === "all" || item.category.includes(filter)
   );
 
-  // Calculate the indices for slicing the data for the current page
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentData = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Calculate total pages
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   const handlePageChange = (newPage: number) => {

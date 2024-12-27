@@ -29,22 +29,26 @@ const About = () => {
                   </span>
                 </h4>
                 <p className="text-muted mt-4">
-                  I hold a Bachelor's degree in Informatics Engineering, earned
-                  in 2020 with a GPA of 3.36, and have had experience as a
-                  developer for approximately 4 years. My unwavering
-                  determination and dedication drive me to carry out every task
-                  diligently and responsibly.
+                  I am a passionate Full-Stack Developer with over 4 years of
+                  professional experience in building scalable and efficient web
+                  and mobile applications. Holding a Bachelor's degree in
+                  Informatics Engineering with an impressive GPA of 3.36, I
+                  bring a combination of strong technical expertise and a deep
+                  commitment to delivering exceptional results. My adaptability,
+                  problem-solving skills, and eagerness to learn new
+                  technologies allow me to thrive in dynamic environments and
+                  overcome challenges effectively. 
                 </p>
                 <p className="text-muted mt-2">
                   I have outstanding adaptability and a high spirit of learning,
                   allowing me to overcome various challenges that arise. In my
                   work, I prefer to use JavaScript/TypeScript, React JS, React
-                  Native, Expo, Redux, Node JS, Express, and PostgreSQL.
+                  Native,Next JS, Expo, Redux, Node JS, Express, Nest JS and PostgreSQL.
                 </p>
                 <p className="text-muted mt-2">
-                  With my technical skills and strong commitment, I believe I
-                  can make a meaningful contribution to achieving the company's
-                  goals.
+                   I am confident that my
+                  skills, experience, and dedication can make a significant
+                  contribution to achieving the company's goals.
                 </p>
 
                 <div>
