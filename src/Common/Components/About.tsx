@@ -29,26 +29,26 @@ const About = () => {
                   </span>
                 </h4>
                 <p className="text-muted mt-4">
-                  I am a passionate Full-Stack Developer with over 4 years of
-                  professional experience in building scalable and efficient web
-                  and mobile applications. Holding a Bachelor's degree in
-                  Informatics Engineering with an impressive GPA of 3.36, I
-                  bring a combination of strong technical expertise and a deep
-                  commitment to delivering exceptional results. My adaptability,
-                  problem-solving skills, and eagerness to learn new
-                  technologies allow me to thrive in dynamic environments and
-                  overcome challenges effectively. 
+                  I am a versatile and results-driven Full-Stack Developer with
+                  over 5 years of experience building scalable web and mobile
+                  applications across fintech, healthtech, and government
+                  sectors. I hold a Bachelor's degree in Informatics Engineering
+                  with a GPA of 3.36 and have a strong foundation in delivering
+                  high-impact digital solutions.
                 </p>
                 <p className="text-muted mt-2">
-                  I have outstanding adaptability and a high spirit of learning,
-                  allowing me to overcome various challenges that arise. In my
-                  work, I prefer to use JavaScript/TypeScript, React JS, React
-                  Native,Next JS, Expo, Redux, Node JS, Express, Nest JS and PostgreSQL.
+                  I specialize in technologies such as JavaScript/TypeScript,
+                  React.js, React Native, Next.js, Redux, Node.js, Nest.js,
+                  Express.js, Java Spring Boot, and Golang. I am also
+                  experienced in implementing clean architecture, CI/CD
+                  pipelines, and deploying to cloud environments using AWS and
+                  Kubernetes.
                 </p>
                 <p className="text-muted mt-2">
-                   I am confident that my
-                  skills, experience, and dedication can make a significant
-                  contribution to achieving the company's goals.
+                  I thrive in Agile teams and enjoy solving complex problems
+                  with maintainable, user-centric solutions. With strong
+                  adaptability and a continuous learning mindset, I’m committed
+                  to contributing meaningfully to every project I take on.
                 </p>
 
                 <div>
